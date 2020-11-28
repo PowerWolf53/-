@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+</header>
+
+<div class="content">
+    <div class="navigation">
+        <ul class="top-menu">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Галлерея</a></li>
+                    <li><a href="#" onclick="saveArray()">Инфо</a></li>
+            </div>
+            
+        </ul>
+    </div>
+<div class="article">
+<h1>Опрос о посещении выставки</h1>
+<table id="tab_1" cellspacing="2" border="1" cellpadding="5">
+    <!-- <thead>
+      <tr>
+        <th>Имя клиента</th>
+        <th>Неделя</th>
+        <th>Посетили все</th>
+        <th>Купили что-то</th>
+        <th>Придут еще</th>
+        <th>Друзей</th>
+        <th>Цвет</th>
+      </tr>
+    </thead> -->
+    <tbody id="tbody">
+        <tr>
+            <th>Имя клиента</th>
+            <th>Неделя</th>
+            <th>Посетили все</th>
+            <th>Купили что-то</th>
+            <th>Придут еще</th>
+            <th>Друзей</th>
+            <th>Цвет</th>
+          </tr>
+    </tbody>
+  </table>
+<form action="" name="questions" id="questions">
+
+    <label for="">Введите имя</label>
+<div class="item">
+    <input type="text" id="name" required>
+</div>
+
+    <label for="">Когда вы посещали выставку?</label>
+<div  class="item">
+    <input type="week" id="week" required>
+</div>
+
+    <label for="">Посмотрели все?</label>
+<div class="item">
+    <label for=""><i>Да</i></label>
+    <input type="radio" name="gr_1" value="Да" id="gr_1" checked>
+    <label for=""><i>Нет</i></label>
+    <input type="radio" name="gr_1" value="Нет" >
+</div>
+
+    <label for="">Купили что-то?</label>
+<div class="item">
+    <select id="phone">
+        <option>Aйфон</option>
+        <option>Самсунг</option>
+      </select>
+</div>
+
+    <label for="">Придёте в следующий раз?</label>
+<div class="item">
+     <label for=""><i>Да</i></label>
+     <input type="radio" name="gr_2" value="Да" id="gr_2" checked>
+     <label for=""><i>Нет</i></label>
+     <input type="radio" name="gr_2" value="Нет" >
+</div>
+
+    <label for="">Сколько друзей пригласите?</label>
+<div class="item">
+    <!-- <input type="range" id="friends" name="friends" 
+    min="0" max="100" value="90" step="1">
+    <p>Value: <span id="demo"></span></p> -->
+    <input type="range" id="r1" oninput="fun1()">
+<p id="one"></p>
+</div>
+
+ <label for="">Ваш любимый цвет</label>
+<div class="item">
+    <input type="color" id="color" checked>
+</div>
+
+<button type="reset" onclick="" style="margin-left: 150px;">Очистить</button>
+</form>
+<button  onclick="addClient()">Отправить</button>
+
+</div>
+    <div class="navigation" >
+        <ul class="top-menu">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Галлерея</a></li>
+                    <li><a href="#">Инфо</a></li>
+            </div>
+            
+        </ul>
+    </div>
+    
+</div>
+</div>
+<footer>
+</footer>
+</body>
+</html>

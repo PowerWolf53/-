@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <div class="main">
+        <div class="param">
+            <select id="size">
+                <option>100px</option>
+                <option>300px</option>
+            </select>
+            <select id="color">
+                <option>red</option>
+                <option>blue</option>
+            </select>
+            <a onclick="defaultParam();">RESET</a>
+        </div>
+        <h1 style="display: none;" id="element_h">Enter data in fields</h1>
+        <div class="in">
+            <form action="" id="form">
+                <label for="field_1">Field 1</label>
+                <input type="text" name="f1" id="field_1" tabIndex="1" onkeydown="return tab(this, event)">
+
+                <label for="field_2">Field 2</label>
+                <input type="text" name="f2" id="field_2" tabIndex="2" onkeydown="return tab(this, event)">
+
+                <label for="field_3">Field 3</label>
+                <input type="text" name="f3" id="field_3" tabIndex="3" onkeydown="return tab(this, event)">
+            </form>
+        </div>
+
+        <div id="for_modal" class="for_modal">
+            <div class="modal-overlay" id="modal-overlay"></div>
+
+          <div class="modal" id="modal" aria-hidden="true" aria-labelledby="modalTitle"
+                aria-describedby="modalDescription" role="dialog">
+                <button class="close-button" id="close-button" title="Закрыть модальное окно">Close</button>
+                <div class="modal-guts" role="document">
+                    <h1>List of items</h1>
+                    <div id="items">
+                        <ol id="items_list" style="margin-left: 20px;">
+                            <li>text 1</li>
+                            <li>text 1</li>
+                            <li>text 1</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="out">
+            <button onclick="reset();">Button 1</button>
+            <button id="open-button" onclick="secondButton();">Button 2</button>
+            <button onclick="thirdButton();">Button 3</button>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
